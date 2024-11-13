@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVESURE E-commerce</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+
+    <!-- Home Page -->
+    <section id="home" class="hero-section active">
+        <div style = "background-image: url(img/lambo.jpg); background-size: cover;" class="mega-card">
+            <h2>Featured Collection</h2>
+            <p>Check out our latest trends!</p>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/tire.jpeg" class="product-thumb" alt="Product Image">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Tire Alignment</h2>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/goldengine.jpg" class="product-thumb" alt="Product Image">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Engine Oil</h2>
+                    <span class="price">$25</span><span class="actual-price">$50</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/full.jpg" class="product-thumb" alt="Product Image">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Full Checkup</h2>
+                    <span class="price">$30</span><span class="actual-price">$60</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Page -->
+    <section id="products" class="product">
+        <button class="back-btn" onclick="showSection('home')">Back</button>
+        <h2 class="product-category">Best Selling</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="img/fserv.jpeg" class="product-thumb" alt="Product Image">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Full Package</h2>
+                    <p class="product-short-des">Includes everything your vehicle needs!</p>
+                    <span class="price">$60</span><span class="actual-price">$120</span>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+        
+    </section>
+
+    <!-- Product Detail Page -->
+    <section id="product-detail" class="product-detail">
+        <button class="back-btn" onclick="showSection('products')">Back</button>
+        <div class="product-image">
+            <img style = "height:80vh; width:100vw; background-size: cover;" src="img/fserv.jpeg" alt="Product Detail">
+        </div>
+        <div class="product-info">
+            <h1>Full Checkup</h1>
+            <p class="product-description">Includes everything your vehicle needs!</p>
+            <span class="price">$60</span>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </section>
+
+    <!-- Checkout Page -->
+    <section id="checkout" class="checkout">
+        <button class="back-btn" onclick="showSection('products')">Back</button>
+        <h1>Checkout</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer></footer>
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
